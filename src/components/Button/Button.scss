@@ -1,0 +1,55 @@
+@import "../../styles/variable";
+
+.ant-btn {
+  height: auto;
+  &-primary {
+    padding: 8px 20px;
+    height: auto;
+    line-height: 24px;
+  }
+  &-text {
+    display: flex;
+    height: 56px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 12px;
+    border: 1px solid var(--greyscale-300, #e2e8f0);
+    color: var(--greyscale-900, #1a202c);
+    text-align: center;
+
+    /* body/large/medium */
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.2px;
+  }
+}
+
+.sign-btn {
+  margin-top: 32px;
+  display: flex;
+  width: 427px;
+  height: 56px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 12px;
+
+  color: var(--others-white, #fff);
+  text-align: center;
+
+  /* body/large/extrabold */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.2px;
+}

@@ -1,0 +1,20 @@
+input {
+  width: 427px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  outline: none;
+
+  color: var(--greyscale-500, #a0aec0);
+
+  /* body/large/regular */
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.3px;
+}
+::placeholder {
+  color: #a0aec0;
+}
