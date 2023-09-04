@@ -71,20 +71,20 @@ function Modal() {
             <div className="modal-visa-method">
               <div className="modal-modal-desc">
                 <Visa />
-                <spn className="modal-modal-text">
+                <span className="modal-modal-text">
                   <h4>Visa</h4>
                   <p>$24,098.00</p>
-                </spn>
+                </span>
               </div>
               <Radio checked className="modal-radio" />
             </div>
             <div className="modal-payoneer-method">
               <div className="modal-modal-desc">
                 <Payoneer />
-                <spn className="modal-modal-text">
+                <span className="modal-modal-text">
                   <h4>Payoneer</h4>
                   <p>$34,245.00</p>
-                </spn>
+                </span>
               </div>
               <Radio className="modal-radio" checked={false} />
             </div>

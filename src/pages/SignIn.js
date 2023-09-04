@@ -46,7 +46,11 @@ const SignIn = () => {
           <div className="sign-input">
             <BaseInput placeholder="Username or email" type="text" />
             <DisablEye className="input-logo" />
-            <BaseInput placeholder="Password" type="password" />
+            <BaseInput
+              placeholder="Password"
+              type="password"
+              className="pass-input"
+            />
           </div>
 
           <div className="sign-remebmer">

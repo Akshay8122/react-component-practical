@@ -5,15 +5,15 @@ input {
   border: 1px solid #e2e8f0;
   outline: none;
 
-  color: var(--greyscale-500, #a0aec0);
+  color: var(--greyscale-900, #1a202c);
 
   /* body/large/regular */
   font-family: "Manrope", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 550;
   line-height: 150%; /* 24px */
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
 ::placeholder {
   color: #a0aec0;
