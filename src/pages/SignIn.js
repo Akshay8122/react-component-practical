@@ -11,6 +11,7 @@ import RectangleIcon from "../assets/images/Rectangle 19.svg";
 import Elips1 from "../assets/images/Ellipse 82.svg";
 import BaseButton from "../components/Button/Button";
 import BaseInput from "../components/Input/Input";
+import CheckboxCompo from "../components/Checkbox/Checkbox";
 import Footer from "../components/Footer/Footer";
 import Modal from "../components/Modal/Modal";
 
@@ -55,8 +56,7 @@ const SignIn = () => {
 
           <div className="sign-remebmer">
             <span className="remember">
-              <Radio />
-              {/* <Check/> */}
+              <CheckboxCompo />
               <p>Remember me</p>
             </span>
             <p className="sign-forgot">Forgot Password?</p>
