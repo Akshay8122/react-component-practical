@@ -1,11 +1,12 @@
+@import "../../styles/variable";
 input {
   width: 427px;
   padding: 16px;
   border-radius: 12px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid $border-color;
   outline: none;
 
-  color: var(--greyscale-900, #1a202c);
+  color: $greyscale-900;
 
   /* body/large/regular */
   font-family: "Manrope", sans-serif;
@@ -16,5 +17,5 @@ input {
   letter-spacing: 0.2px;
 }
 ::placeholder {
-  color: #a0aec0;
+  color: $paceholder;
 }

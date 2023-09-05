@@ -1,3 +1,5 @@
+@import "../../styles/variable";
+
 .sign-footer {
   display: flex;
   width: 681px;
@@ -8,9 +10,8 @@
 }
 
 .footer-text {
-  color: var(--greyscale-600, #718096);
+  color: $greyscale-600;
   text-align: right;
-
   /* body/large/semibold */
   font-family: Manrope;
   font-size: 16px;

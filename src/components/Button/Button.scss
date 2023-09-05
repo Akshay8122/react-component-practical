@@ -16,8 +16,8 @@
     gap: 8px;
     flex: 1 0 0;
     border-radius: 12px;
-    border: 1px solid var(--greyscale-300, #e2e8f0);
-    color: var(--greyscale-900, #1a202c);
+    border: 1px solid $greyscale-300;
+    color: $greyscale-900;
     text-align: center;
 
     /* body/large/medium */
@@ -42,7 +42,7 @@
   flex-shrink: 0;
   border-radius: 12px;
 
-  color: var(--others-white, #fff);
+  color: $white;
   text-align: center;
 
   /* body/large/extrabold */
