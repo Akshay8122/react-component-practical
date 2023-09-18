@@ -1,6 +1,5 @@
 import React from "react";
-import { Divider, Radio } from "antd";
-import "./SignIn.scss";
+import { Divider } from "antd";
 import Header from "../components/Header/Header";
 import { ReactComponent as Google } from "../assets/images/google.svg";
 import { ReactComponent as Apple } from "../assets/images/apple.svg";
@@ -14,6 +13,7 @@ import BaseInput from "../components/Input/Input";
 import CheckboxCompo from "../components/Checkbox/Checkbox";
 import Footer from "../components/Footer/Footer";
 import Modal from "../components/Modal/Modal";
+import "./SignIn.scss";
 
 const SignIn = () => {
   return (
