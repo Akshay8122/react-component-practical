@@ -1,0 +1,22 @@
+@import "../../styles/variable";
+
+.sign-footer {
+  display: flex;
+  width: 681px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-end;
+  margin-top: 148px;
+}
+
+.footer-text {
+  color: $greyscale-600;
+  text-align: right;
+  /* body/large/semibold */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.2px;
+}
