@@ -1,0 +1,220 @@
+@import "../styles/variable";
+
+.signup-container {
+  display: grid;
+  grid-template-columns: 639px 777px;
+  height: 1024px;
+  background: $white;
+
+  .signup-img-layout {
+    width: 639px;
+    position: relative;
+    padding: 24px 24px 24px 0px;
+    position: relative;
+  }
+
+  .signup-img-container {
+    display: flex;
+    justify-content: center;
+    width: 639px;
+    height: 976px;
+    position: absolute;
+    background-color: $primary-base;
+    background-image: url("../assets/images/semiCircle.svg"),
+      url("../assets/images/squarePuzzle.svg"), url("../assets/images/line.svg"),
+      url("../assets/images/square.svg"), url("../assets//images/cross.svg"),
+      url("../assets/images/crossMini.svg"), url("../assets/images/cross.svg"),
+      url("../assets/images/whitelogo.svg");
+    background-position: 443px 570px, 11px calc(100% - 12px),
+      calc(100% - 16px) 0px, 58px 156px, 158px 151px, 483px 179px, 499px 205px,
+      32px 32px;
+    background-repeat: no-repeat;
+    .payment-img {
+      position: absolute;
+      top: 292px;
+      right: 42px;
+    }
+    .transfer-img {
+      position: absolute;
+      bottom: 328px;
+      left: 58px;
+      width: 235px;
+    }
+  }
+  .img-layout-title-container {
+    position: absolute;
+    bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    gap: 32px;
+    .img-layout-text {
+      display: flex;
+      width: 500px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      .heading-title {
+        color: $white;
+        text-align: center;
+        font-family: Manrope;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 110%;
+      }
+      .sub-heading-text {
+        color: $white;
+        text-align: center;
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 0.2px;
+        opacity: 0.7;
+        .dollar {
+          opacity: 0.7;
+          color: $alerts-warning-base;
+          font-family: Manrope;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 150%;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+    .img-layout-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  .signup-account-container {
+    height: 100%;
+    grid-row: 1/-1;
+    grid-column: 2;
+    position: relative;
+
+    .signup-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .heading-layout {
+      margin-top: 148px;
+      display: flex;
+      width: 290px;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+
+      .heading-text {
+        font-family: "Manrope";
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.2px;
+        text-align: center;
+        width: 358px;
+        color: $greyscale-900;
+      }
+      .sub-heading-text {
+        font-family: "Manrope";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        text-align: center;
+        color: $subHeading-text;
+      }
+    }
+
+    .social {
+      margin-top: 40px;
+      display: flex;
+      width: 427px;
+      text-align: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .option-text {
+      display: flex;
+      width: 427px;
+      justify-content: center;
+      align-items: center;
+      margin: 12px 0px;
+    }
+    .signup-input {
+      display: flex;
+      width: 427px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+
+      .name-div {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+      }
+      .input-logo {
+        position: absolute;
+        right: 188px;
+        bottom: 440px;
+      }
+    }
+
+    .signup-remebmer {
+      display: flex;
+      width: 427px;
+      margin-top: 24px;
+
+      .gray-text,
+      .black-text {
+        color: var(--greyscale-600, #718096);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 0.2px;
+      }
+      .black-text {
+        color: var(--greyscale-900, #1a202c);
+      }
+    }
+
+    .sign-forgott {
+      color: $primary-base;
+      text-align: right;
+      font-family: Manrope;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: 0.2px;
+    }
+    .signin-option {
+      margin-top: 32px;
+      color: $greyscale-900;
+      text-align: center;
+      font-family: "Manrope", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: 0.2px;
+    }
+    .signin-text {
+      font-weight: bold;
+      font-family: "Manrope", sans-serif;
+    }
+  }
+}

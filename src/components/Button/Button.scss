@@ -2,6 +2,7 @@
 
 .ant-btn {
   height: auto;
+  border: none;
   &-primary {
     padding: 8px 20px;
     height: auto;
@@ -30,7 +31,8 @@
   }
 }
 
-.sign-btn {
+.sign-btn,
+.signup-btn {
   margin-top: 32px;
   display: flex;
   width: 427px;
@@ -52,4 +54,7 @@
   font-weight: 800;
   line-height: 150%; /* 24px */
   letter-spacing: 0.2px;
+}
+.social-btn {
+  padding: 0px 18px;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Divider } from "antd";
 import Header from "../components/Header/Header";
 import { ReactComponent as Google } from "../assets/images/google.svg";
@@ -16,6 +17,7 @@ import Modal from "../components/Modal/Modal";
 import "./SignIn.scss";
 
 const SignIn = () => {
+  const navigate = useNavigate();
   return (
     <div className="container">
       <Header />
@@ -65,7 +67,10 @@ const SignIn = () => {
           <BaseButton type={"primary"} value="Sign In" className="sign-btn" />
 
           <p className="signUp-option">
-            Don't have an account? <span className="signUp-text">Sign Up</span>
+            Don't have an account?{" "}
+            <span onClick={() => navigate("/signup")} className="signUp-text">
+              Sign Up
+            </span>
           </p>
         </div>
 

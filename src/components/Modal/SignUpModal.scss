@@ -1,0 +1,150 @@
+@import "../../styles/variable";
+
+.modal-container {
+  width: 333px;
+  height: 389px;
+  padding: 20px;
+  border-radius: 16px;
+  margin: 224px auto;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .modal-heading {
+    display: flex;
+    width: 293px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    .heading-content-text {
+      color: $greyscale-600;
+      font-family: Manrope;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: 0.4px;
+    }
+    .heading-content-number {
+      color: $greyscale-900;
+      font-family: Manrope;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+      letter-spacing: 0.1px;
+    }
+    .heading-content {
+      &-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      &-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+      }
+    }
+  }
+  .modal-chart {
+    display: flex;
+    width: 293px;
+    height: 145px;
+    flex-shrink: 0;
+    gap: 16px;
+  }
+  .ant-divider-horizontal {
+    width: 293px;
+    height: 1px;
+    background: $border-color;
+    margin: 16px 0 12px 0;
+  }
+  .modal-recent-activity {
+    display: flex;
+    width: 293px;
+    flex-direction: column;
+    align-items: flex-start;
+    .modal-activities {
+      display: flex;
+      height: 48px;
+      justify-content: space-between;
+      align-items: center;
+      align-self: stretch;
+      .stripe-left,
+      .facebook-left {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        .stripe-logo,
+        .facebook-logo {
+          display: flex;
+          width: 48px;
+          height: 48px;
+          padding: 12px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 1000px;
+          border: 1px solid $greyscale-200;
+        }
+        .stripe-left-text,
+        .facebook-left-text {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 4px;
+          .stripe-text,
+          .facebook-text {
+            color: $greyscale-900;
+            font-family: Manrope;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 150%;
+            letter-spacing: 0.2px;
+          }
+          .deposit-text,
+          .advertising-text {
+            color: $greyscale-600;
+            font-family: Manrope;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            letter-spacing: 0.4px;
+          }
+        }
+      }
+      .stripe-right,
+      .facebook-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+        .stripe-number,
+        .facebook-number {
+          color: $greyscale-900;
+          text-align: right;
+          font-family: Manrope;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 150%;
+          letter-spacing: 0.2px;
+        }
+        .today-date {
+          color: $greyscale-600;
+          text-align: right;
+          font-family: Manrope;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+          letter-spacing: 0.4px;
+        }
+      }
+    }
+  }
+}
