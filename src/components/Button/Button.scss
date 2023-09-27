@@ -32,7 +32,9 @@
 }
 
 .sign-btn,
-.signup-btn {
+.signup-btn,
+.verify-btn,
+.btn-signin {
   margin-top: 32px;
   display: flex;
   width: 427px;
@@ -43,7 +45,6 @@
   gap: 10px;
   flex-shrink: 0;
   border-radius: 12px;
-
   color: $white;
   text-align: center;
 
@@ -57,4 +58,11 @@
 }
 .social-btn {
   padding: 0px 18px;
+}
+.btn-signin {
+  width: 150px;
+  margin: 0;
+}
+.verify-btn {
+  margin: 0;
 }

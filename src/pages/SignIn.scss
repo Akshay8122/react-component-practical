@@ -1,5 +1,9 @@
 @import "../styles/variable";
-
+.wrapper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container {
   display: grid;
   grid-template-columns: 777px 639px;
@@ -167,32 +171,21 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 24px;
-}
-.remember {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: $greyscale-900;
 
-  /* body/large/semibold */
-  font-family: "Manrope", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-  letter-spacing: 0.2px;
-}
-.sign-forgot {
-  color: $primary-base;
-  text-align: right;
+  .sign-forgot {
+    color: $primary-base;
+    text-align: right;
 
-  /* body/large/semibold */
-  font-family: Manrope;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%; /* 24px */
-  letter-spacing: 0.2px;
+    /* body/large/semibold */
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.2px;
+  }
 }
+
 .signUp-option {
   margin-top: 32px;
   color: $greyscale-900;
@@ -209,4 +202,16 @@
 .signUp-text {
   font-weight: bold;
   font-family: "Manrope", sans-serif;
+}
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  gap: 12px;
+  color: $greyscale-900;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.2px;
 }

@@ -6,9 +6,7 @@ input {
   border-radius: 12px;
   border: 1px solid $border-color;
   outline: none;
-
   color: $greyscale-900;
-
   /* body/large/regular */
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -17,6 +15,7 @@ input {
   line-height: 150%; /* 24px */
   letter-spacing: 0.2px;
 }
+
 ::placeholder {
   color: $paceholder;
 }
@@ -32,3 +31,30 @@ input {
   border-radius: 12px;
   border: 1px solid var(--greyscale-300, #e2e8f0);
 }
+// .remember {
+//   display: flex;
+//   width: 14px;
+//   height: 14px;
+//   border-radius: 50px;
+// }
+
+// .remember[type="checkbox"] {
+//   width: auto;
+//   background-color: white;
+//   border-radius: 50%;
+//   vertical-align: middle;
+//   border: 2px solid #ddd;
+//   appearance: none;
+//   -webkit-appearance: none;
+//   outline: none;
+//   cursor: pointer;
+// }
+// .remember {
+//   width: 20px;
+//   height: 20px;
+//   border: 4px solid black;
+//   border-radius: 50%;
+//   appearance: auto;
+//   clip-path: circle(50%);
+//   background-color: blue;
+// }

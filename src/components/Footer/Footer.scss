@@ -15,6 +15,16 @@
   padding: 0px 48px 48px 48px;
 }
 
+.forgotPass-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 48px 48px 48px;
+  position: absolute;
+  bottom: 0px;
+}
+
 .footer-text {
   color: $greyscale-600;
   text-align: right;

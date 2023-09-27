@@ -1,0 +1,11 @@
+@import "../../styles/variable";
+
+.header-style {
+  display: inline-flex;
+  padding: 22px 48px;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  background: $greyscale-900;
+  width: 100%;
+}

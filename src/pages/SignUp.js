@@ -17,108 +17,115 @@ import { useNavigate } from "react-router-dom";
 const SignUp = () => {
   const navigate = useNavigate();
   return (
-    <div className="signup-container">
-      <div className="signup-img-layout">
-        <div className="signup-img-container">
-          <div>
-            <Modal />
-            <img src={PaymentImg} alt="bal" className="payment-img" />
-            <img src={TransferImg} alt="frame" className="transfer-img" />
-          </div>
-          <div className="img-layout-title-container">
-            <div className="img-layout-text">
-              <h2 className="heading-title">Speady, Easy and Fast</h2>
-              <p className="sub-heading-text">
-                Overpay help you set saving goals, earn cash back offers, Go to
-                disclaimer for more details and get paychecks up to two days
-                early. Get a<span className="dollar"> $20</span> bonus when you
-                receive qualifying direct deposits
-              </p>
-            </div>
+    <div className="wrapper-container">
+      <div className="signup-container">
+        <div className="signup-img-layout">
+          <div className="signup-img-container">
             <div>
-              <span className="img-layout-icons">
-                <img src={Elips1} alt="E1" />
-                <img src={RectangleIcon} alt="rectangle" />
-                <img src={Elips1} alt="E2" />
-              </span>
+              <Modal />
+              <img src={PaymentImg} alt="bal" className="payment-img" />
+              <img src={TransferImg} alt="frame" className="transfer-img" />
+            </div>
+            <div className="img-layout-title-container">
+              <div className="img-layout-text">
+                <h2 className="heading-title">Speady, Easy and Fast</h2>
+                <p className="sub-heading-text">
+                  Overpay help you set saving goals, earn cash back offers, Go
+                  to disclaimer for more details and get paychecks up to two
+                  days early. Get a<span className="dollar"> $20</span> bonus
+                  when you receive qualifying direct deposits
+                </p>
+              </div>
+              <div>
+                <span className="img-layout-icons">
+                  <img src={Elips1} alt="E1" />
+                  <img src={RectangleIcon} alt="rectangle" />
+                  <img src={Elips1} alt="E2" />
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* for image */}
+        {/* for image */}
 
-      <div className="signup-account-container">
-        <div className="signup-div">
-          <div className="heading-layout">
-            <h3 className="heading-text">Sign up for an account</h3>
-            <p className="sub-heading-text">Send, spend and save smarter</p>
-          </div>
-
-          <div className="social">
-            <BaseButton
-              value="Sign Up with Google"
-              type={"text"}
-              icon={<Google />}
-              className="social-btn"
-            />
-
-            <BaseButton
-              value="Sign Up with Apple"
-              type={"text"}
-              icon={<Apple />}
-              className="social-btn"
-            />
-          </div>
-
-          <div className="option-text">
-            <Divider>Or with email</Divider>
-          </div>
-
-          <div className="signup-input">
-            <div className="name-div">
-              <BaseInput
-                className="name-input inputt"
-                placeholder="First name"
-              />
-              <BaseInput className="name-input input" placeholder="Last name" />
+        <div className="signup-account-container">
+          <div className="signup-div">
+            <div className="heading-layout">
+              <h3 className="heading-text">Sign up for an account</h3>
+              <p className="sub-heading-text">Send, spend and save smarter</p>
             </div>
 
-            <BaseInput placeholder="Email" type="text" />
-            <DisablEye className="input-logo" />
-            <BaseInput
-              placeholder="Password"
-              type="password"
-              className="pass-input input"
-            />
-          </div>
+            <div className="social">
+              <BaseButton
+                value="Sign Up with Google"
+                type={"text"}
+                icon={<Google />}
+                className="social-btn"
+              />
 
-          <div className="signup-remebmer">
-            <p>
-              <span className="gray-text">
-                By creating an account, you agreeing to our
-              </span>
-              &nbsp;<span className="black-text">Privacy Policy</span>
-              <span className="gray-text">, and </span>
-              <span className="black-text">
-                Electronics Communication Policy.
+              <BaseButton
+                value="Sign Up with Apple"
+                type={"text"}
+                icon={<Apple />}
+                className="social-btn"
+              />
+            </div>
+
+            <div className="option-text">
+              <Divider>Or with email</Divider>
+            </div>
+
+            <div className="signup-input">
+              <div className="name-div">
+                <BaseInput
+                  className="name-input inputt"
+                  placeholder="First name"
+                />
+                <BaseInput
+                  className="name-input input"
+                  placeholder="Last name"
+                />
+              </div>
+
+              <BaseInput placeholder="Email" type="text" />
+              <DisablEye className="input-logo" />
+              <BaseInput
+                placeholder="Password"
+                type="password"
+                className="pass-input input"
+              />
+            </div>
+
+            <div className="signup-remebmer">
+              <p>
+                <span className="gray-text">
+                  By creating an account, you agreeing to our
+                </span>
+                &nbsp;<span className="black-text">Privacy Policy</span>
+                <span className="gray-text">, and </span>
+                <span className="black-text">
+                  Electronics Communication Policy.
+                </span>
+              </p>
+            </div>
+
+            <BaseButton
+              type={"primary"}
+              value="Sign Up"
+              className="signup-btn"
+              onClick={() => navigate("/")}
+            />
+
+            <p className="signin-option">
+              Already have an account?
+              <span className="signin-text" onClick={() => navigate("/")}>
+                Sign In
               </span>
             </p>
           </div>
-
-          <BaseButton
-            type={"primary"}
-            value="Sign Up"
-            className="signup-btn"
-            onClick={() => navigate("/")}
-          />
-
-          <p className="signin-option">
-            Already have an account?
-            <span className="signin-text"> Sign In</span>
-          </p>
+          <Footer className={"signup-footer"} />
         </div>
-        <Footer />
       </div>
     </div>
   );

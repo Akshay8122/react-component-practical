@@ -1,9 +1,9 @@
 import React from "react";
 import "./Footer.scss";
 
-const Footer = () => {
+const Footer = ({ className }) => {
   return (
-    <div className="signup-footer">
+    <div className={className}>
       <p className="footer-text">Privacy Policy</p>
       <p className="footer-text">Copyright 2022</p>
     </div>
