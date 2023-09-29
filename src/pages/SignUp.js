@@ -1,5 +1,5 @@
 import React from "react";
-import { Divider } from "antd";
+import { Divider, Form } from "antd";
 import "./SignUp.scss";
 import { ReactComponent as Google } from "../assets/images/google.svg";
 import { ReactComponent as Apple } from "../assets/images/apple.svg";
@@ -50,7 +50,7 @@ const SignUp = () => {
         {/* for image */}
 
         <div className="signup-account-container">
-          <div className="signup-div">
+          <Form onFinish={() => navigate("/")} className="signup-div">
             <div className="heading-layout">
               <h3 className="heading-text">Sign up for an account</h3>
               <p className="sub-heading-text">Send, spend and save smarter</p>
@@ -62,6 +62,7 @@ const SignUp = () => {
                 type={"text"}
                 icon={<Google />}
                 className="social-btn"
+                href={"https://accounts.google.com"}
               />
 
               <BaseButton
@@ -69,6 +70,7 @@ const SignUp = () => {
                 type={"text"}
                 icon={<Apple />}
                 className="social-btn"
+                href={"https://developer.apple.com/sign-in-with-apple/"}
               />
             </div>
 
@@ -81,19 +83,22 @@ const SignUp = () => {
                 <BaseInput
                   className="name-input inputt"
                   placeholder="First name"
+                  required={true}
                 />
                 <BaseInput
                   className="name-input input"
                   placeholder="Last name"
+                  required={true}
                 />
               </div>
 
-              <BaseInput placeholder="Email" type="text" />
+              <BaseInput placeholder="Email" type="text" required={true} />
               <DisablEye className="input-logo" />
               <BaseInput
                 placeholder="Password"
                 type="password"
                 className="pass-input input"
+                required={true}
               />
             </div>
 
@@ -114,7 +119,6 @@ const SignUp = () => {
               type={"primary"}
               value="Sign Up"
               className="signup-btn"
-              onClick={() => navigate("/")}
             />
 
             <p className="signin-option">
@@ -123,7 +127,7 @@ const SignUp = () => {
                 Sign In
               </span>
             </p>
-          </div>
+          </Form>
           <Footer className={"signup-footer"} />
         </div>
       </div>

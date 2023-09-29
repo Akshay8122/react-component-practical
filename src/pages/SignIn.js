@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { Divider } from "antd";
+import { Divider, Form } from "antd";
 import Header from "../components/Header/Header";
 import { ReactComponent as Google } from "../assets/images/google.svg";
 import { ReactComponent as Apple } from "../assets/images/apple.svg";
@@ -18,6 +18,7 @@ import "./SignIn.scss";
 
 const SignIn = () => {
   const navigate = useNavigate();
+
   return (
     <div className="wrapper-container">
       <div className="container">
@@ -34,12 +35,14 @@ const SignIn = () => {
                 value="Sign In with Google"
                 type={"text"}
                 icon={<Google />}
+                href={"https://accounts.google.com"}
               />
 
               <BaseButton
                 value="Sign In with Apple"
                 type={"text"}
                 icon={<Apple />}
+                href={"https://developer.apple.com/sign-in-with-apple/"}
               />
             </div>
 
@@ -47,38 +50,47 @@ const SignIn = () => {
               <Divider>Or with email</Divider>
             </div>
 
-            <div className="sign-input">
-              <BaseInput placeholder="Username or email" type="text" />
-              <DisablEye className="input-logo" />
-              <BaseInput
-                placeholder="Password"
-                type="password"
-                className="pass-input"
+            <Form onFinish={() => navigate("/home")}>
+              <div className="sign-input">
+                <BaseInput
+                  placeholder="Username or email"
+                  type="text"
+                  required={true}
+                />
+                <DisablEye className="input-logo" />
+                <BaseInput
+                  placeholder="Password"
+                  type="password"
+                  className="pass-input"
+                  required={true}
+                />
+              </div>
+
+              <div className="sign-remebmer">
+                <span className="checkbox-wrapper">
+                  <Checkbox value={"Remember me"} />
+                </span>
+                <Link className="sign-forgot" to={"/forgotPass"}>
+                  Forgot Password?
+                </Link>
+              </div>
+
+              <BaseButton
+                type={"primary"}
+                value="Sign In"
+                className="sign-btn"
               />
-            </div>
 
-            <div className="sign-remebmer">
-              <span className="checkbox-wrapper">
-                <Checkbox value={"Remember me"} />
-              </span>
-              <Link className="sign-forgot" to={"/forgotPass"}>
-                Forgot Password?
-              </Link>
-            </div>
-
-            <BaseButton
-              type={"primary"}
-              value="Sign In"
-              className="sign-btn"
-              onClick={() => navigate("/home")}
-            />
-
-            <p className="signUp-option">
-              Don't have an account?{" "}
-              <span onClick={() => navigate("/signup")} className="signUp-text">
-                Sign Up
-              </span>
-            </p>
+              <p className="signUp-option">
+                Don't have an account?{" "}
+                <span
+                  onClick={() => navigate("/signup")}
+                  className="signUp-text"
+                >
+                  Sign Up
+                </span>
+              </p>
+            </Form>
           </div>
 
           <Footer className={"sign-footer"} />
