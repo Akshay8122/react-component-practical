@@ -6,8 +6,8 @@ const BaseInput = ({
   type,
   className,
   required,
+  name,
   maxLength,
-  minLength,
 }) => {
   return (
     <input
@@ -16,7 +16,7 @@ const BaseInput = ({
       className={className}
       required={required}
       maxLength={maxLength}
-      minLength={minLength}
+      name={name}
     />
   );
 };

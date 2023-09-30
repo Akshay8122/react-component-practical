@@ -1,11 +1,18 @@
 import React from "react";
 import "./ForgotPass.scss";
+
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import BaseInput from "../components/Input/Input";
 import BaseButton from "../components/Button/Button";
+import { Link } from "react-router-dom";
+import { Form } from "antd";
+import toast from "react-hot-toast";
 
 function ForgotPass() {
+  const notify = () => toast.success("Email sent successfully.");
+  const validateTrigger = ["onChange", "onBlur"];
+
   return (
     <>
       <Header fullLength />
@@ -18,18 +25,27 @@ function ForgotPass() {
               send you a link to reset your password.
             </p>
           </div>
-
-          <BaseInput
-            className="forgot-input"
-            placeholder="alesiakarapova@mail.com"
-          />
-          <div className="forgot-btn-section">
-            <BaseButton type="primary" value="Send Link" className="sign-btn" />
-            <p className="forgot-email-text">Forgot your email?</p>
-          </div>
+          <Form onFinish={() => notify()}>
+            <BaseInput
+              className="forgot-input"
+              placeholder="alesiakarapova@mail.com"
+              required={true}
+              name="email"
+            />
+            <div className="forgot-btn-section">
+              <BaseButton
+                type="primary"
+                value="Send Link"
+                className="sign-btn"
+              />
+              <Link to={"/otp-auth"} className="forgot-email-text">
+                Forgot your email?
+              </Link>
+            </div>
+          </Form>
         </div>
       </div>
-      <Footer className={"forgotPass-footer"} />
+      <Footer className={"forgotpass-footer"} />
     </>
   );
 }
