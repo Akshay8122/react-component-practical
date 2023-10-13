@@ -8,6 +8,7 @@ const BaseInput = ({
   required,
   name,
   maxLength,
+  icon,
 }) => {
   return (
     <input
@@ -17,6 +18,7 @@ const BaseInput = ({
       required={required}
       maxLength={maxLength}
       name={name}
+      icon={icon}
     />
   );
 };

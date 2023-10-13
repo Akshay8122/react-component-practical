@@ -2,10 +2,10 @@ import React from "react";
 import { ReactComponent as LogoImg } from "../../assets/images/logo.svg";
 import "./Logo.scss";
 
-const Logo = () => {
+const Logo = ({ className }) => {
   return (
-    <div className="logo">
-      <LogoImg />
+    <div>
+      <LogoImg className={className} />
     </div>
   );
 };

@@ -55,3 +55,41 @@ input {
     gap: 24px;
   }
 }
+.quick-input {
+  width: 100%;
+  height: 98px;
+  display: flex;
+  color: var(--greyscale-900, #1a202c);
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+
+  background-image: url("../../assets//images/antonio.svg"),
+    url("../../assets/images/happygirl.svg");
+  background-repeat: no-repeat;
+  background-position: 345px 34px, 365px 32px;
+  background-size: auto 28px, 30px;
+  line-height: 130%; /* 31.2px */
+  &::placeholder {
+    text-align: start;
+  }
+
+  &::-webkit-input-placeholder {
+    color: var(--greyscale-600, #718096);
+    font-family: Manrope;
+    font-size: 12px;
+    text-align: start;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 18px */
+    letter-spacing: 0.4px;
+  }
+  &::-moz-placeholder {
+    text-align: start;
+  }
+  .background {
+    width: 100%;
+    height: 100%;
+  }
+}

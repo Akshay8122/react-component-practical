@@ -5,12 +5,12 @@ import BaseButton from "../Button/Button";
 import { ReactComponent as LogoImg } from "../../assets/images/white-logo.svg";
 import { useNavigate } from "react-router";
 
-const Header = ({ fullLength }) => {
+const Header = ({ fullLength, className }) => {
   const navigate = useNavigate();
   return (
     <>
       {fullLength ? (
-        <header>
+        <header className={className}>
           <div className="header-style">
             <LogoImg />
             <BaseButton
@@ -22,7 +22,7 @@ const Header = ({ fullLength }) => {
           </div>
         </header>
       ) : (
-        <header>
+        <header className={className}>
           <Logo />
         </header>
       )}

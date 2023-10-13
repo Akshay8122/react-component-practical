@@ -34,9 +34,12 @@
 .sign-btn,
 .signup-btn,
 .verify-btn,
-.btn-signin {
-  margin-top: 32px;
+.btn-signin,
+.home-btn,
+.sidebar-btns,
+.primary-btn {
   display: flex;
+  margin-top: 32px;
   width: 427px;
   height: 56px;
   padding: 8px;
@@ -47,7 +50,6 @@
   border-radius: 12px;
   color: $white;
   text-align: center;
-
   /* body/large/extrabold */
   font-family: Manrope;
   font-size: 16px;
@@ -55,7 +57,7 @@
   font-weight: 800;
   line-height: 150%; /* 24px */
   letter-spacing: 0.2px;
-}
+} /* 21px */
 .social-btn {
   padding: 0px 18px;
 }
@@ -65,4 +67,66 @@
 }
 .verify-btn {
   margin: 0;
+}
+.home-btn,
+.sidebar-btns {
+  margin: 0;
+  width: 202px;
+  height: 47px;
+  padding: 16px;
+  gap: 15px;
+  align-self: stretch;
+  border-radius: 12px;
+  // background: var(--primary-base, #194bfb);
+
+  // color: var(--greyscale-600, #718096);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+}
+.sidebar-btns {
+  background: none;
+  outline: none;
+  position: relative;
+  border: none;
+  box-shadow: none;
+  color: var(--greyscale-600, #718096);
+}
+.btn-banner-upgrade {
+  margin-top: 24px;
+  display: flex;
+  height: 36px;
+  width: 121px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: $white;
+  color: var(--primary-base, #194bfb);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+.btn-banner-upgrade:active {
+  background: $white;
+}
+.veiw-all-btn {
+  max-width: 100px;
+  margin: 0;
+  height: 34px;
+  display: inline-flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  background: var(--greyscale-50, #fafafa);
+}
+.primary-btn {
+  margin-top: 35px;
 }

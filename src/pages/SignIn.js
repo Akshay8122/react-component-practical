@@ -22,7 +22,7 @@ const SignIn = () => {
   return (
     <div className="wrapper-container">
       <div className="container">
-        <Header />
+        <Header className={"sign-header"} />
         <div className="sign-container">
           <div className="sign-div">
             <div className="heading-layout">

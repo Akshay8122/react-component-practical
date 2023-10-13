@@ -9,7 +9,7 @@ const BaseButton = ({
   className,
   onClick,
   href,
-  htmlType,
+  onFocus,
 }) => {
   return (
     <Button
@@ -18,7 +18,7 @@ const BaseButton = ({
       onClick={onClick}
       htmlType="submit"
       href={href}
-      // href={"https://developer.apple.com/sign-in-with-apple/"}
+      onFocus={onFocus}
     >
       {icon}
       {value}

@@ -1,7 +1,93 @@
-.home {
+@import "../styles/variable";
+
+.home-container-main {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 500px auto;
-  font-size: 22px;
+  .home-container-wrapper {
+    width: calc(100% - 250px);
+    height: auto;
+    flex-shrink: 0;
+    background: $white;
+    padding: 20px 40px;
+    .home-headerbar {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .heading-text {
+        color: $greyscale-900;
+
+        /* Heading/H4 */
+        font-family: Manrope;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 130%; /* 31.2px */
+      }
+      .heading-menu {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        .header-option-style {
+          display: inline-flex;
+          height: 48px;
+          padding: 8px;
+          align-items: center;
+          gap: 18px;
+          flex-shrink: 0;
+          color: $greyscale-900;
+          font-family: Manrope;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 150%;
+          letter-spacing: 0.2px;
+          border-radius: 1000px;
+          background: $greyscale-50;
+        }
+
+        .ant-select {
+          .ant-select-selector {
+            border: none;
+            height: auto;
+          }
+        }
+        .notify-icon {
+          position: absolute;
+          top: 30px;
+          right: 238px;
+        }
+        .search-icon,
+        .bell-icon {
+          display: flex;
+          width: 48px;
+          height: 48px;
+          padding: 12px;
+          justify-content: center;
+          align-items: center;
+          flex-shrink: 0;
+          border-radius: 1000px;
+          background: $greyscale-50;
+        }
+      }
+    }
+  }
+  .main-container-layout {
+    display: grid;
+    grid-template-columns: 2fr 0.7fr;
+    column-gap: 32px;
+    margin-top: 22px;
+  }
+}
+.logout-style {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  color: $greyscale-900;
+
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0.2px;
 }

@@ -3,12 +3,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 .container {
   display: grid;
   grid-template-columns: 777px 639px;
   align-items: center;
-  height: 1024px;
+  height: 100%;
   background: $white;
 }
 
@@ -25,7 +27,7 @@
   display: flex;
   justify-content: center;
   width: 639px;
-  height: 976px;
+  height: 940px;
   position: absolute;
   background-color: $primary-base;
   background-image: url("../assets/images/semiCircle.svg"),
@@ -42,7 +44,7 @@
   }
   .frame-img {
     position: absolute;
-    bottom: 375px;
+    bottom: 340px;
     left: 92px;
     width: 280px;
   }
