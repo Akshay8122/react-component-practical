@@ -7,8 +7,10 @@ const BaseInput = ({
   className,
   required,
   name,
+  minLength,
   maxLength,
   icon,
+  pattern,
 }) => {
   return (
     <input
@@ -17,7 +19,10 @@ const BaseInput = ({
       className={className}
       required={required}
       maxLength={maxLength}
+      minLength={minLength}
       name={name}
+      pattern={pattern}
+      // pattern="^[a-zA-Z0-9_]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+$|^[a-zA-Z0-9_]{3,16}$"
       icon={icon}
     />
   );

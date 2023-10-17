@@ -84,20 +84,28 @@ const SignUp = () => {
                   className="name-input inputt"
                   placeholder="First name"
                   required={true}
+                  pattern={"^[a-zA-Z]+$"}
                 />
                 <BaseInput
                   className="name-input input"
                   placeholder="Last name"
+                  pattern={"^[a-zA-Z]+$"}
                   required={true}
                 />
               </div>
 
-              <BaseInput placeholder="Email" type="text" required={true} />
+              <BaseInput
+                placeholder="Email"
+                type="email"
+                pattern={"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$"}
+                required={true}
+              />
               <DisablEye className="input-logo" />
               <BaseInput
                 placeholder="Password"
                 type="password"
                 className="pass-input input"
+                minLength={6}
                 required={true}
               />
             </div>

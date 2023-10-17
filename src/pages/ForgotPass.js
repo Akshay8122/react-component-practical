@@ -11,7 +11,6 @@ import toast from "react-hot-toast";
 
 function ForgotPass() {
   const notify = () => toast.success("Email sent successfully.");
-  const validateTrigger = ["onChange", "onBlur"];
 
   return (
     <>
@@ -30,6 +29,7 @@ function ForgotPass() {
               className="forgot-input"
               placeholder="alesiakarapova@mail.com"
               required={true}
+              pattern={"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$"}
               name="email"
             />
             <div className="forgot-btn-section">

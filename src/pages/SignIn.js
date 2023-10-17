@@ -56,6 +56,9 @@ const SignIn = () => {
                   placeholder="Username or email"
                   type="text"
                   required={true}
+                  pattern={
+                    "^[a-zA-Z0-9_]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$|^[a-zA-Z0-9_]{5,16}$"
+                  }
                 />
                 <DisablEye className="input-logo" />
                 <BaseInput
@@ -63,6 +66,7 @@ const SignIn = () => {
                   type="password"
                   className="pass-input"
                   required={true}
+                  minLength={6}
                 />
               </div>
 
