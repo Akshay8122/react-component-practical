@@ -44,6 +44,10 @@
         display: inline-flex;
         align-self: flex-end;
       }
+      .ant-btn-text:not(:disabled):hover {
+        color: $primary-base;
+        background-color: $white;
+      }
     }
   }
   .img-money-chart {
